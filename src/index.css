@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* **Global Styles** */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background:url(assets/hello_kitty_plain_pink_wallpaper_by_wickerenthusiast_dgt3y1y-fullview.jpg) rgba(255, 192, 250, 0.932)no-repeat center center fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+/* **Currency Converter Container** */
+.currency-converter {
+  margin: 0 auto;
+  padding: 40px 30px 50px;
+  border-radius: 8px;
+  max-width: 2500px;
+  backdrop-filter: blur(0px);
+  background: rgba(40, 2, 38, 0);
+  border: 1px solid rgba(255, 255, 255, 0);
+  box-shadow: 0 8px 32px rgb(0, 0, 0);
+}
+
+.converter-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* **Form Styles** */
+.converter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-label {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.form-input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+  border-color: #007bff;
+}
+
+/* **Currency Select Styles** */
+.form-currency-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.currency-select {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 8px;
+  background-color: #f9f9f9;
+}
+
+.currency-select img {
+  width: 24px;
+  height: 16px;
+}
+
+.currency-dropdown {
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  outline: none;
+  cursor: pointer;
+}
+
+/* **Swap Icon Styles** */
+.swap-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.swap-icon svg {
+  fill: #007bff;
+  transition: transform 0.3s ease;
+}
+
+.swap-icon:hover svg {
+  transform: rotate(180deg);
+}
+
+/* **Submit Button Styles** */
+.submit-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* **Exchange Rate Results Styles** */
+.exchange-rate-results {
+  text-align: center;
+  font-size: 1.1rem;
+  color: blue;
+  margin-top: 16px;
+  font-weight: bold;
+  background-color: #555;
+  border-radius: 100px;
+  padding: 10px;
+}
